@@ -44,3 +44,4 @@ if st.button("predict Probabibilty"):
     predict=pipe.predict_proba(pd.DataFrame([[batting_team,bowling_team,city,runs_left,balls_left,wickets_left,target,crr,rrr]],columns=["batting_team","bowling_team","city","runs_left","balls_left","wik_left","total_runs_x","currate","runrate"]))
     st.text("Match win by "+bowling_team+" is "+str(predict[0][0]))
     st.text("Match win by "+batting_team+" is "+ str(predict[0][1]))
+st.text("DEVELOPED BY : SOLO_DRAGON AKA KANDADI SAI TEJA")
